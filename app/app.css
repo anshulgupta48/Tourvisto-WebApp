@@ -1,0 +1,39 @@
+/* <======== Importing Google-Fonts ========> */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-figtree {
+  font-family: 'Figtree', sans-serif;
+}
+
+
+/* <======== Importing Tailwind-CSS ========> */
+@import 'tailwindcss';
+
+
+/* <======== Importing Syncfusion ========> */
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-splitbuttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";
+
+
+/* <======== Configuring Custom-CSS ========> */
+.signInBg {
+  background: url('./assets/sign-in-bg.jpg');
+  background-size: cover;
+}
+
+.signInBoxShadow {
+  box-shadow: 0px 0px 40px 0px #1F1F3633;
+}
+
+.signInBtn {
+  @apply !min-h-[52px] !w-full !bg-[#256FF1] hover:!brightness-90 hover:!shadow-none focus:!shadow-none !border-2 !border-solid !border-[#ECF2EF] !rounded-[8px] !flex !items-center !justify-center !gap-[10px] !transition-all !duration-300;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+}
