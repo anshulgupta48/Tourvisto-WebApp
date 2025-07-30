@@ -24,6 +24,11 @@
 
 
 /* <======== Configuring Custom-CSS ========> */
+::-webkit-scrollbar {
+  height: 0px !important;
+  width: 0px !important;
+}
+
 .signInBg {
   background: url('./assets/sign-in-bg.jpg');
   background-size: cover;
@@ -34,6 +39,24 @@
 }
 
 .signInBtn {
-  @apply !min-h-[52px] !w-full !bg-[#256FF1] hover:!brightness-90 hover:!shadow-none focus:!shadow-none !border-2 !border-solid !border-[#ECF2EF] !rounded-[8px] !flex !items-center !justify-center !gap-[10px] !transition-all !duration-300;
+  @apply !min-h-[52px] !w-full !bg-[#256FF1] hover: !brightness-90 hover: !shadow-none focus: !shadow-none !border-2 !border-solid !border-[#ECF2EF] !rounded-[8px] !flex !items-center !justify-center !gap-[10px] !transition-all !duration-300;
   box-shadow: 0px 1px 2px 0px #1018280D;
+}
+
+.heroBg {
+  background: url('./assets/hero-bg.png');
+  background-size: cover;
+}
+
+.heroBgOverlay {
+  background: linear-gradient(104.72deg, rgba(207, 241, 255, 0.8) 14.17%, rgba(255, 255, 255, 0) 54.71%);
+}
+
+.heroBtn {
+  @apply !min-h-[56px] !w-[209px] !bg-[#256FF1] hover: !brightness-90 hover: !shadow-none focus: !shadow-none !border-none !rounded-[8px] !flex !items-center !justify-center !transition-all !duration-300;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+}
+
+.featuredTripBox {
+  background: linear-gradient(357.11deg, rgba(30, 30, 30, 0.67) 11.64%, rgba(66, 66, 66, 0) 23.22%);
 }

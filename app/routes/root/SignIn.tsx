@@ -15,7 +15,7 @@ const SignIn: React.FunctionComponent = () => {
       <div className='absolute left-0 top-0 h-full w-full signInBg'></div>
       <div className='absolute left-0 top-0 h-full w-full bg-[#F9FBFC] opacity-40'></div>
 
-      <div className='h-[330px] w-[495px] px-[25px] py-[40px] bg-[#FFFFFF] border border-solid border-[#ECF2EF] rounded-[20px] flex flex-col justify-center items-center gap-[30px] z-10 signInBoxShadow'>
+      <div className='h-[330px] w-[495px] px-[25px] py-[40px] bg-[#FFFFFF] border border-solid border-[#ECF2EF] rounded-[20px] flex flex-col justify-center items-center gap-[30px] z-[5px] signInBoxShadow'>
         <div className='flex items-center gap-[6px]'>
           <img src={Logo} alt='Tourvisto-Logo' className='h-[30px] w-[30px]' />
           <p className='text-[#1F1F36] text-[28px] font-bold font-jakarta'>Tourvisto</p>
