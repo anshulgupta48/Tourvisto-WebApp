@@ -22,6 +22,35 @@
 @import "../node_modules/@syncfusion/ej2-react-splitbuttons/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";
 
+/* <==== Syncfusion ChipDirective-Component ====> */
+.e-chip-list {
+  padding: 0px !important;
+}
+
+.chipDirective0 {
+  @apply !h-[28px] !w-max !m-0 !px-[20px] !bg-[#ECFDF3] !rounded-[40px] !text-[#027A48] !text-[12px] !font-medium !flex !justify-center !items-center;
+}
+
+.chipDirective1 {
+  @apply !h-[28px] !w-max !m-0 !px-[20px] !bg-[#F3F0FB] !rounded-[40px] !text-[#6941C6] !text-[12px] !font-medium !flex !justify-center !items-center;
+}
+
+.chipDirective2 {
+  @apply !h-[28px] !w-max !m-0 !px-[20px] !bg-[#F7EDF6] !rounded-[40px] !text-[#C11574] !text-[12px] !font-medium !flex !justify-center !items-center;
+}
+
+.chipDirective3 {
+  @apply !h-[28px] !w-max !m-0 !px-[20px] !bg-[#E9F3FB] !rounded-[40px] !text-[#175CD3] !text-[12px] !font-medium !flex !justify-center !items-center;
+}
+
+.chipDirective4 {
+  @apply !h-[28px] !w-max !m-0 !px-[20px] !bg-[#FFF4ED] !rounded-[40px] !text-[#B93815] !text-[12px] !font-medium !flex !justify-center !items-center;
+}
+
+.chipDirective5 {
+  @apply !h-[28px] !w-max !m-0 !px-[20px] !bg-[#FFF1F3] !rounded-[40px] !text-[#C01048] !text-[12px] !font-medium !flex !justify-center !items-center;
+}
+
 
 /* <======== Configuring Custom-CSS ========> */
 ::-webkit-scrollbar {
@@ -39,7 +68,7 @@
 }
 
 .signInBtn {
-  @apply !min-h-[52px] !w-full !bg-[#256FF1] hover: !brightness-90 hover: !shadow-none focus: !shadow-none !border-2 !border-solid !border-[#ECF2EF] !rounded-[8px] !flex !items-center !justify-center !gap-[10px] !transition-all !duration-300;
+  @apply !min-h-[52px] !w-full !bg-[#256FF1] hover:brightness-90 hover:shadow-none focus:shadow-none !border-2 !border-solid !border-[#ECF2EF] !rounded-[8px] !flex !items-center !justify-center !gap-[10px] !transition-all !duration-300;
   box-shadow: 0px 1px 2px 0px #1018280D;
 }
 
@@ -53,10 +82,14 @@
 }
 
 .heroBtn {
-  @apply !min-h-[56px] !w-[209px] !bg-[#256FF1] hover: !brightness-90 hover: !shadow-none focus: !shadow-none !border-none !rounded-[8px] !flex !items-center !justify-center !transition-all !duration-300;
+  @apply !min-h-[56px] !w-[209px] !bg-[#256FF1] hover:brightness-90 hover:shadow-none focus:shadow-none !border-none !rounded-[8px] !flex !items-center !justify-center !transition-all !duration-300;
   box-shadow: 0px 1px 2px 0px #1018280D;
 }
 
 .featuredTripBox {
   background: linear-gradient(357.11deg, rgba(30, 30, 30, 0.67) 11.64%, rgba(66, 66, 66, 0) 23.22%);
+}
+
+.tripBoxShadow {
+  box-shadow: 0px 2px 30px 0px #0000000D;
 }

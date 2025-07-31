@@ -15,3 +15,16 @@ export { default as FeaturedTripBanner3 } from './featured-trip-banner-3.png';
 export { default as FeaturedTripBanner4 } from './featured-trip-banner-4.png';
 export { default as FeaturedTripBanner5 } from './featured-trip-banner-5.png';
 export { default as FeaturedTripBanner6 } from './featured-trip-banner-6.png';
+
+
+// <======== Exporting Assets for TripCard-Component ========>
+export { default as LocationIcon } from './location-icon.svg';
+
+export { default as HandpickedTripBanner1 } from './handpicked-trip-banner-1.png';
+export { default as HandpickedTripBanner2 } from './handpicked-trip-banner-2.png';
+export { default as HandpickedTripBanner3 } from './handpicked-trip-banner-3.png';
+export { default as HandpickedTripBanner4 } from './handpicked-trip-banner-4.png';
+export { default as HandpickedTripBanner5 } from './handpicked-trip-banner-5.png';
+export { default as HandpickedTripBanner6 } from './handpicked-trip-banner-6.png';
+export { default as HandpickedTripBanner7 } from './handpicked-trip-banner-7.png';
+export { default as HandpickedTripBanner8 } from './handpicked-trip-banner-8.png';
