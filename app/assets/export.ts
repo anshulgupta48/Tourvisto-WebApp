@@ -28,3 +28,17 @@ export { default as HandpickedTripBanner5 } from './handpicked-trip-banner-5.png
 export { default as HandpickedTripBanner6 } from './handpicked-trip-banner-6.png';
 export { default as HandpickedTripBanner7 } from './handpicked-trip-banner-7.png';
 export { default as HandpickedTripBanner8 } from './handpicked-trip-banner-8.png';
+
+
+// <======== Exporting Assets for TripDetails-Page ========>
+export { default as ArrowLeftIcon } from './arrow-left-icon.svg';
+export { default as CalendarIcon } from './calendar-icon.svg';
+export { default as StarIcon } from './star-icon.svg';
+
+export { default as TripDetailsBanner1 } from './trip-details-banner-1.png';
+export { default as TripDetailsBanner2 } from './trip-details-banner-2.png';
+export { default as TripDetailsBanner3 } from './trip-details-banner-3.png';
+
+
+// <======== Exporting Assets for PaymentSuccess-Page ========>
+export { default as PaymentSuccessIcon } from './payment-success-icon.svg';

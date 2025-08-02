@@ -93,3 +93,16 @@
 .tripBoxShadow {
   box-shadow: 0px 2px 30px 0px #0000000D;
 }
+
+.tripDetailsBackBtnShadow {
+  box-shadow: 0px 12px 16px -4px #1018281A;
+}
+
+.tripDetailsPaymentBtn {
+  @apply !min-h-[54px] !w-full !bg-[#256FF1] hover:brightness-90 hover:shadow-none focus:shadow-none !border-2 !border-solid !border-[#ECF2EF] !rounded-[8px] !normal-case !flex !justify-center !items-center !gap-[10px] !transition-all !duration-300 !cursor-pointer;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+}
+
+.paymentSuccessBtnShadow {
+  box-shadow: 0px 1px 2px 0px #1018280D;
+}

@@ -4,5 +4,7 @@ export default [
     route('/sign-in', './routes/root/SignIn.tsx'),
     layout('./routes/layout/AppLayout.tsx', [
         index('./routes/root/Home.tsx'),
+        route('/trip/:tripId', './routes/root/TripDetails.tsx'),
+        route('/trip/:tripId/success', './routes/root/PaymentSuccess.tsx'),
     ]),
 ] satisfies RouteConfig;

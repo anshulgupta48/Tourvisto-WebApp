@@ -149,7 +149,7 @@ const Home: React.FunctionComponent = () => {
 
         <div className='w-full flex flex-wrap gap-[30px]'>
           {handpickedTripsData.map((item, index) => (
-            <TripCard title={item.title} location={item.location} price={item.price} tags={item.tags} banner={item.banner} key={index} />
+            <TripCard tripId={item.tripId} title={item.title} location={item.location} price={item.price} tags={item.tags} banner={item.banner} key={index} />
           ))}
         </div>
       </div>

@@ -1,11 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 import { ChipListComponent, ChipsDirective, ChipDirective } from '@syncfusion/ej2-react-buttons';
 import type { TripCardComponentProps } from '~/utils/types';
 import { LocationIcon } from '~/assets/export';
 
-const TripCard: React.FunctionComponent<TripCardComponentProps> = ({ title, location, price, tags, banner }) => {
+const TripCard: React.FunctionComponent<TripCardComponentProps> = ({ tripId, title, location, price, tags, banner }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className='h-[306px] min-w-[270px] w-[23%] rounded-[20px] flex flex-col overflow-hidden cursor-pointer font-figtree tripBoxShadow'>
+    <div className='h-[306px] min-w-[270px] w-[23%] rounded-[20px] flex flex-col overflow-hidden cursor-pointer font-figtree tripBoxShadow' onClick={() => navigate(`/trip/${tripId}`)}>
       <div className='h-[170px] w-full relative'>
         <img src={banner} alt='Trip-Banner' className='h-full w-full' />
 
