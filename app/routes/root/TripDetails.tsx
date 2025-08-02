@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useParams } from 'react-router';
+import { useParams, useNavigate, NavLink } from 'react-router';
 import { ChipListComponent, ChipsDirective, ChipDirective, ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import { MapsComponent, LayersDirective, LayerDirective } from '@syncfusion/ej2-react-maps';
 import TripCard from '~/components/TripCard';
@@ -9,11 +9,11 @@ import type { MapDataType, TripDetailsDataType } from '~/utils/types';
 import { ArrowLeftIcon, CalendarIcon, LocationIcon, StarIcon, TripDetailsBanner1, TripDetailsBanner2, TripDetailsBanner3 } from '~/assets/export';
 
 const TripDetails: React.FunctionComponent = () => {
-  const params = useParams();
   const [popularTripsData, setPopularTripsData] = useState(handpickedTripsDefaultData);
   const [tripDetailsData, setTripDetailsData] = useState<TripDetailsDataType | null>(null);
   const [mapData, setMapData] = useState<MapDataType[]>([]);
-  console.log(tripDetailsData)
+  const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const selectedTripData = handpickedTripsDefaultData.filter((item) => item.tripId === Number(params?.tripId));
@@ -28,6 +28,21 @@ const TripDetails: React.FunctionComponent = () => {
     ];
     setMapData(selectedTripMapData);
   }, [params?.tripId]);
+
+  const handlePay = async () => {
+    const response = await fetch('/api/create-trip', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        tripId: params?.tripId,
+        title: tripDetailsData?.title,
+        description: tripDetailsData?.description,
+        price: tripDetailsData?.price,
+      })
+    });
+    const result = await response.json();
+    window.location.href = result?.url;
+  };
 
   return (
     <div className='w-full px-[10%] pt-[150px] pb-[50px] bg-[#F9FBFC] flex flex-col gap-[60px] font-figtree'>
@@ -155,7 +170,7 @@ const TripDetails: React.FunctionComponent = () => {
             </LayersDirective>
           </MapsComponent>
 
-          <ButtonComponent type='Button' className='tripDetailsPaymentBtn'>
+          <ButtonComponent type='Button' className='tripDetailsPaymentBtn' onClick={handlePay}>
             <p className='text-[#FFFFFF] text-[16px] font-semibold'>Pay and join trip</p>
 
             <div className='h-[22px] w-max px-[10px] bg-[#FFFFFF] rounded-[20px] flex justify-center items-center'>
